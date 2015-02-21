@@ -1,0 +1,19 @@
+{
+  "name": "scotch",
+  "version": "0.0.0",
+  "authors": [
+    "PJ Dunlevy <yorko9999@gmail.com>"
+  ],
+  "description": "Frontend components for a scotch.io tutorial",
+  "main": "server.js",
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
