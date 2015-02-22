@@ -5,7 +5,7 @@ var express			= require('express'),
 
 var db = require('./config/db');
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8080;
 
 // connect to our mongoDB database 
 // (uncomment after you enter in your own credentials in config/db.js)
@@ -27,11 +27,15 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 // set the static files location /public/img will be /img for users
 
 app.use(express.static(__dirname + '/public'));
+app.get("/", function(req, res)
+{
+    res.sendFile("/views/index.html");
+});
 
 require('./app/routes')(app);
 
 app.listen(port, function() {
-	console.log("Magic happens on port" + port);
+	console.log("Magic happens on port " + port);
 });
 
 exports = module.exports = app;

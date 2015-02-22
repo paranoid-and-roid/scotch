@@ -1,10 +1,11 @@
 {
-  "name": "scotch",
+  "name": "starter-node-angular",
   "version": "1.0.0",
   "description": "A scotch.io tutorial",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "PJ",
   "license": "ISC",
@@ -13,5 +14,14 @@
     "express": "^4.11.2",
     "method-override": "^2.3.1",
     "mongoose": "^3.8.23"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paranoid-and-roid/scotch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paranoid-and-roid/scotch/issues"
+  },
+  "homepage": "https://github.com/paranoid-and-roid/scotch"
 }
